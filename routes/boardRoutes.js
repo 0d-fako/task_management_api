@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const boardController = require('../controllers/boardController');
-const verifyToken = require('../middlewares/verifyToken');
+const verifyToken = require('../middlewares/authMiddleware');
 
 router.use(verifyToken);
 

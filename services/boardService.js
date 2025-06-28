@@ -1,4 +1,4 @@
-const boardRepo = require('../repository/boardRepository');
+const boardRepo = require('../repositories/boardRepository');
 
 
 const createBoard = async (title, userId) => {

@@ -1,5 +1,5 @@
-const taskRepo = require('../repository/taskRepository');
-const boardRepo = require('../repository/boardRepository');
+const taskRepo = require('../repositories/taskRepository');
+const boardRepo = require('../repositories/boardRepository');
 
 const createTask = async (data, userId) => {
   const board = await boardRepo.findBoardById(data.board, userId);

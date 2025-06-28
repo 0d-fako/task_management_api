@@ -1,4 +1,4 @@
-const Board = require('../models/Board');
+const Board = require('../model/Board');
 
 
 const createBoard = async (title, userId) => {

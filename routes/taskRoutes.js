@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const taskController = require('../controllers/taskController');
-const verifyToken = require('../middlewares/verifyToken');
+const verifyToken = require('../middlewares/authMiddleware');
 
 router.use(verifyToken); 
 

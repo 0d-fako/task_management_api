@@ -1,4 +1,4 @@
-const userRepo = require('../repository/userRepository');
+const userRepo = require('../repositories/userRepository');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
