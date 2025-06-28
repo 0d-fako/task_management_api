@@ -10,10 +10,25 @@
       "url": "https://task-management-api-mtl.onrender.com"
     }
   ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
   "paths": {
     "/users/register": {
       "post": {
         "summary": "Register a new user",
+        "security": [],
         "requestBody": {
           "required": true,
           "content": {
@@ -39,6 +54,7 @@
     "/users/login": {
       "post": {
         "summary": "Authenticate user and return token",
+        "security": [],
         "requestBody": {
           "required": true,
           "content": {
