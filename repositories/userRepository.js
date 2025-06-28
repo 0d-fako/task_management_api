@@ -11,12 +11,12 @@ const findUserByEmail = async (email) => {
 };
 
 
-const getUserById = async (id) => {
+const findUserById = async (id) => {
   return await User.findById(id);
 };
 
 module.exports = {
     createUser,
     findUserByEmail,
-    getUserById
+    findUserById
 };
